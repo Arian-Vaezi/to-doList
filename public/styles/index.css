@@ -1,0 +1,103 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(45deg, #fc466b, #3f5efb);
+  background-attachment: fixed;
+}
+.navbar-brand,
+.nav-link {
+  color: rgb(188 246 141);
+}
+.navbar-nav .nav-link.active {
+  color: rgb(25, 33, 19);
+}
+.navbar {
+  z-index: 4;
+}
+
+h1 {
+  outline: none;
+}
+body {
+  background-color: #234;
+}
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.2px);
+  -webkit-backdrop-filter: blur(1.2px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  color: rgb(178, 200, 255);
+  font-size: 20px;
+}
+.box2 {
+  margin: 50px auto;
+}
+.box2 ul {
+  margin: 20px;
+  width: 100%;
+}
+
+form input {
+  width: 200px;
+  padding: 1rem;
+  margin-right: 10px;
+  font-weight: 600;
+  border-radius: 100px;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background: transparent;
+}
+form input:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+}
+
+form input[type="text"]:focus {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+}
+::placeholder {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+ul li {
+  display: flex;
+  align-items: center;
+}
+ul li input:checked + p {
+  text-decoration: line-through;
+  text-decoration-color: #234;
+}
+a,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+form button {
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background: transparent;
+}

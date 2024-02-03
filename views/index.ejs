@@ -1,0 +1,33 @@
+<%- include('partials/header.ejs') %>
+<div class="container w-50">
+  <div class="box d-flex justify-content-center">
+    <div class="title"><%= title %></div>
+  </div>
+
+  <div
+    class="box2 d-flex flex-column justify-content-center align-items-center"
+  >
+    <ul class="list-group">
+      <% tasks.forEach(task => { %>
+      <li class="list-group-item d-flex">
+        <input type="checkbox" name="" id="" />
+        <p class="m-0 ms-3 mb-0"><%= task %></p>
+      </li>
+      <%}); %>
+    </ul>
+    <form
+      action="/"
+      method="post"
+      class="d-flex flex-wrap justify-content-center align-items-center"
+    >
+      <input
+        type="text"
+        name="newItem"
+        placeholder="new Item"
+        class="mb-2 mb-sm-0"
+      />
+      <button type="submit" name="list" value="<%=title%>">+</button>
+    </form>
+  </div>
+</div>
+<%- include('partials/footer.ejs') %>
